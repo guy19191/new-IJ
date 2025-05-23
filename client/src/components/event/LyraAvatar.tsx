@@ -126,11 +126,6 @@ const LyraAvatar: React.FC<LyraAvatarProps> = ({ energyLevel, isPlaying }) => {
               className="absolute -top-48 right-0"
             >
               <div className="relative w-40 h-40">
-                <img
-                  src="/icons/lyra.png"
-                  alt="Lyra AI"
-                  className="w-full h-full object-cover rounded-xl"
-                />
                 <motion.div
                   animate={{
                     opacity: [0.3, 0.6, 0.3],

@@ -31,6 +31,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.json()); 
 
 // Initialize Passport
 app.use(session({
