@@ -15,10 +15,17 @@ const Header = () => {
           <motion.div
             whileHover={{ rotate: [0, -10, 10, -5, 5, 0] }}
             transition={{ duration: 0.5 }}
-            className="p-2 rounded-full bg-gradient-to-r from-neon-magenta to-neon-purple"
+            className="relative w-10 h-10"
           >
-            <Music4 className="h-6 w-6 text-white" />
+            <img 
+              src="/src/assets/icons/ij-icon.png"
+              alt="IJ Logo"
+              className="w-full h-full object-contain glow"
+            />
           </motion.div>
+          <span className="text-xl font-bold bg-gradient-to-r from-neon-magenta via-neon-purple to-neon-cyan bg-clip-text text-transparent">
+            IJ
+          </span>
         </Link>
         
         {isEventPage && (
@@ -44,7 +51,15 @@ const Header = () => {
                   : 'bg-dark-700/40 text-gray-300 hover:bg-dark-700'
               }`}
             >
-              <User size={20} />
+              {user.avatar ? (
+                <img 
+                  src={user.avatar} 
+                  alt={user.name} 
+                  className="w-6 h-6 rounded-full"
+                />
+              ) : (
+                <User size={20} />
+              )}
             </Link>
           )}
         </div>

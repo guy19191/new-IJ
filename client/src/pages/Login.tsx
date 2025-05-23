@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Music4, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import { authApi } from '../services/api';
 
 const providers = [
@@ -56,7 +56,7 @@ const Login = () => {
     if (existingToken) {
       const from = location.state?.from?.pathname || "/";
       navigate(from);
-       }
+    }
 
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
@@ -105,7 +105,11 @@ const Login = () => {
           transition={{ delay: 0.3 }}
           className="flex justify-center mb-4"
         >
-          <Music4 className="h-16 w-16 text-neon-purple" />
+          <img 
+            src="/src/assets/icons/ij-icon.png"
+            alt="IJ Logo"
+            className="w-24 h-24 object-contain glow floating"
+          />
         </motion.div>
         <h1 className="text-4xl font-bold text-white mb-2">Welcome to IJ DJ</h1>
         <p className="text-gray-400">Sign in to start creating amazing playlists</p>
