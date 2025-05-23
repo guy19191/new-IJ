@@ -18,7 +18,7 @@ const genreOptions = [
   'Techno', 'House', 'Chill', 'Indie', 'Reggaeton'
 ];
 
-const eraOptions = ['70s', '80s', '90s', '2000s', '2010s', '2020s'];
+const eraOptions = ['70s', '80s', '90s', '2000s', '2010s', '2020s', 'Newest', 'all'];
 
 const CreateEvent = () => {
   const navigate = useNavigate();
