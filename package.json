@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/app.js",
     "dev": "nodemon src/app.ts && nodemon client/src/app.ts",
-    "build": "tsc",
+    "build": "tsc && npm run build --prefix client",
     "lint": "eslint . --ext .ts",
     "test": "jest",
     "init-db": "ts-node src/scripts/init-db.ts",
