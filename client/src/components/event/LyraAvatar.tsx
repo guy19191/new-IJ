@@ -127,7 +127,7 @@ const LyraAvatar: React.FC<LyraAvatarProps> = ({ energyLevel, isPlaying }) => {
             >
               <div className="relative w-40 h-40">
                 <img
-                  src="/src/assets/icons/lyra.png"
+                  src="/icons/lyra.png"
                   alt="Lyra AI"
                   className="w-full h-full object-cover rounded-xl"
                 />

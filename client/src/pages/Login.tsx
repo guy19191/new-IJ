@@ -105,11 +105,6 @@ const Login = () => {
           transition={{ delay: 0.3 }}
           className="flex justify-center mb-4"
         >
-          <img 
-            src="/src/assets/icons/ij-icon.png"
-            alt="IJ Logo"
-            className="w-24 h-24 object-contain glow floating"
-          />
         </motion.div>
         <h1 className="text-4xl font-bold text-white mb-2">Welcome to IJ DJ</h1>
         <p className="text-gray-400">Sign in to start creating amazing playlists</p>

@@ -61,7 +61,7 @@ const Home = () => {
             {user?.avatar ? (
               <img src={user.avatar} alt={user.name} className="w-full h-full object-cover" />
             ) : (
-              <img src="../../resoureces/icons/lyra.png" alt={user?.name} className="w-full h-full object-cover" />
+              <img src="/icons/lyra.png" alt={user?.name} className="w-full h-full object-cover" />
             )}
           </div>
           <div className="mt-4 text-center">

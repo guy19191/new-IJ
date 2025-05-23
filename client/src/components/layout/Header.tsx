@@ -18,7 +18,7 @@ const Header = () => {
             className="relative w-10 h-10"
           >
             <img 
-              src="/src/assets/icons/ij-icon.png"
+              src="/icons/ij-icon.png"
               alt="IJ Logo"
               className="w-full h-full object-contain glow"
             />
