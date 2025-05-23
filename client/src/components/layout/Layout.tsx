@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import Header from './Header';
 import { useLocation } from 'react-router-dom';
+import LyraAvatar from '../event/LyraAvatar';
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,6 +10,7 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
+  const showLyra = !location.pathname.includes('/login');
   
   return (
     <div className="min-h-screen flex flex-col overflow-hidden">
@@ -63,6 +65,14 @@ const Layout: FC<LayoutProps> = ({ children }) => {
           className="absolute top-1/4 right-1/4 w-1/2 h-1/2 rounded-full bg-neon-purple/5 blur-3xl"
         />
       </div>
+
+      {/* Lyra Avatar */}
+      {showLyra && (
+        <LyraAvatar 
+          energyLevel={75} 
+          isPlaying={true}
+        />
+      )}
     </div>
   );
 };
