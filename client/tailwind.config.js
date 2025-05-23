@@ -9,6 +9,8 @@ export default {
           magenta: '#FF00FF',
           purple: '#9900FF',
           cyan: '#00FFFF',
+          green: '#00FF66',
+          blue: '#00CCFF',
         },
         dark: {
           900: '#0F0F13',
@@ -35,11 +37,21 @@ export default {
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'float': 'float 6s ease-in-out infinite',
+        'glow': 'glow 2s ease-in-out infinite',
+        'wave': 'wave 8s linear infinite',
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
+        },
+        glow: {
+          '0%, 100%': { filter: 'brightness(1)' },
+          '50%': { filter: 'brightness(1.2)' },
+        },
+        wave: {
+          '0%': { backgroundPosition: '0% 0%' },
+          '100%': { backgroundPosition: '200% 0%' },
         }
       },
       backdropBlur: {
