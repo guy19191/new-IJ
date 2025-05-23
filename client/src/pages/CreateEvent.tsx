@@ -10,7 +10,6 @@ const moodOptions = [
   { id: 'energetic', name: 'Energetic', emoji: '🔥' },
   { id: 'chill', name: 'Chill', emoji: '😌' },
   { id: 'party', name: 'Party', emoji: '🎉' },
-  { id: 'focus', name: 'Focus', emoji: '🧠' },
   { id: 'romantic', name: 'Romantic', emoji: '💖' },
 ];
 
