@@ -17,11 +17,6 @@ const Header = () => {
             transition={{ duration: 0.5 }}
             className="relative w-10 h-10"
           >
-            <img 
-              src="/icons/ij-icon.png"
-              alt="IJ Logo"
-              className="w-full h-full object-contain glow"
-            />
           </motion.div>
           <span className="text-xl font-bold bg-gradient-to-r from-neon-magenta via-neon-purple to-neon-cyan bg-clip-text text-transparent">
             IJ
